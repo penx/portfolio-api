@@ -4,6 +4,8 @@
   "description": "",
   "main": "api.js",
   "scripts": {
+    "postinstall": "npm run build",
+    "build": "babel es6 -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/penx/portfolio-api/issues"
   },
-  "homepage": "https://github.com/penx/portfolio-api#readme"
+  "homepage": "https://github.com/penx/portfolio-api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.5.0"
+  }
 }
